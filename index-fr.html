@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- SWE632: Data Visualization 2 -->
+<!-- Angelica Garcia -->
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Macronutriments au Fromage</title>
+	<link rel="stylesheet" type="text/css" href="./style.css" media="all" />
+	<!-- Load c3.css -->
+	<link href="./inc/c3/c3.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="nav-bar">
+		<h3>Que contient votre fromage pr&eacute;f&eacute;r&eacute;?</h3>
+		<img src="./fromage.png" width="250" height="250" alt="[Cheeses]" />
+		<p>
+			<b>Fromage</b> un aliment &agrave; base de produits laitiers 
+               d&eacute;riv&eacute; de la coagulation de la cas&eacute;ine de 
+               prot&eacute;ine du lait.
+		</p>
+		<p>
+			Cet aliment de base riche en &eacute;l&eacute;ments nutritifs se 
+            pr&eacute;sente dans de nombreuses vari&eacute;t&eacute;s 
+            diff&eacute;rentes, chacune avec des proportions diff&eacute;rentes
+            de macronutriments.
+		</p>
+		<p><b>Fromages populaires</b></p>
+		<ul>
+			<li>Camembert</li>
+			<li>Brie de Meaux</li>
+			<li>Munster</li>
+			<li>Roquefort</li>
+			<li>Ch&egrave;vre</li>
+		</ul>
+	</div>
+	<div id="chart-wrapper">
+	    <p align="right">
+           <a href="./index-us.html"><img src="./us.png" title="Drapeau des etats unis"/><br>Version anglaise</a> 
+        </p>
+        <h1>Tableau comparatif des macronutriments de fromage</h1>
+		<p>
+			Cliquez sur les boutons ci-dessous pour afficher les graphiques 
+            pour comparer les protéines, les lipides, les glucides et les 
+            kilojoules* des plus populaires les fromages.
+		</p>
+		<br />
+		<div id="buttons">
+			<button class="button" id="buttonprotein" onclick="showChart(protein);">Protéines</button>
+			<button class="button" id="buttonfat" onclick="showChart(fat);">Lipides</button>
+			<button class="button" id="buttoncarb" onclick="showChart(carbohydrates);">Glucides</button>
+			<button class="button" id="buttoncal" onclick="showChart(calories);">Kilojoules</button>
+			<br />
+		</div>
+		<div id="chart" class="c3"></div>
+		<script src="./inc/c3/c3.min.js" type="text/javascript"></script>
+		<script src="./inc/d3/d3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./inc/chart.js" type="text/javascript"></script>
+		<br />
+		<p></p>
+		<br />
+		<p></p>
+		<p>
+		<span style="font-size: small;">
+		   *Toutes les valeurs donn&eacute;es sont par 100 grammes. 
+           Donn&eacute;es nutritionnelles provenant de
+			<a href="http://www.calorieking.com">CalorieKing Wellness Solutions, Inc.</a>
+		</span>
+		</p>
+		<p>
+		<span style="font-size: small;">
+		   Le contenu de ce site Web est destin&eacute; uniquement &agrave;
+           des fins d'information et d'&eacute;ducation.
+	    </span>
+	   </p>
+	   <p></p>
+	</div>
+</body>
+
+</html>

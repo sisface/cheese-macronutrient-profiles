@@ -1,0 +1,57 @@
+/* SWE632: Data Visualization */
+/* Angelica Garcia */
+p {
+    color: #393939;
+}
+#nav-bar {
+    float: left;
+    height: 95.5vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 250px;
+	padding: 15px;
+    background-color: #FFEBCD;
+	color: #393939;
+}
+#chart-wrapper {
+    width: auto;
+	text-align: center;
+    overflow: auto;
+}
+#buttons {
+    margin-bottom:150px;
+}
+#buttonprotein {
+    background-color: #e60000;
+}
+#buttonfat {
+    background-color: #ff9900;
+}
+#buttoncarb {
+    background-color: #009933;
+}
+#buttoncal {
+    background-color: #0000ff;
+}
+.button {
+    display: inline-block;
+    width: 225px;
+    padding: 15px 25px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+.button:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}

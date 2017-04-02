@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- SWE632: Data Visualization -->
+<!-- Angelica Garcia -->
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Cheese Macronutrients</title>
+	<link rel="stylesheet" type="text/css" href="./style.css" media="all" />
+	<!-- Load c3.css -->
+	<link href="./inc/c3/c3.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="nav-bar">
+		<h3>What's in Your Favorite Cheese?</h3>
+		<img src="./cheese.png" width="250" height="250" alt="[Cheeses]" />
+		<p>
+			<b>Cheese</b> is a dairy-based food derived from the coagulation of 
+            the milk protein casein.
+		</p>
+		<p>
+			This nutrient-rich dietary staple comes in many different 
+            varieties, each with different ratios of macronutrients.
+		</p>
+		<p><b>Popular Cheeses</b></p>
+		<ul>
+			<li>Cheddar</li>
+			<li>Swiss</li>
+			<li>American</li>
+			<li>Bleu</li>
+			<li>Gorgombert</li>
+		</ul>
+	</div>
+	<div id="chart-wrapper">
+        <p align="right">
+           <a href="./index-fr.html"><img src="./fr.png" title="French flag" /><br>French language version</a> 
+        </p>
+		<h1>Cheese Macronutrient Comparison Chart</h1>
+		<p>
+			Click on the buttons below to view charts to compare the protein, 
+            fat, carbohydrate, and calorie content* of the most popular 
+            cheeses.
+		</p>
+		<br />
+		<div id="buttons">
+			<button class="button" id="buttonprotein" onclick="showChart(protein);">Protein</button>
+			<button class="button" id="buttonfat" onclick="showChart(fat);">Fat</button>
+			<button class="button" id="buttoncarb" onclick="showChart(carbohydrates);">Carbohydrates</button>
+			<button class="button" id="buttoncal" onclick="showChart(calories);">Calories</button>
+			<br />
+		</div>
+		<div id="chart" class="c3"></div>
+		<script src="./inc/c3/c3.min.js" type="text/javascript"></script>
+		<script src="./inc/d3/d3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./inc/chart2.js" type="text/javascript"></script>
+		<br />
+		<p></p>
+		<br />
+		<p></p>
+		<p>
+		<span style="font-size: small;">
+		   *All values given are per 100 grams. Nutrition data sourced from
+			<a href="http://www.calorieking.com">CalorieKing Wellness Solutions, Inc.</a>
+		</span>
+		</p>
+		<p>
+		<span style="font-size: small;">
+		   The content on this website is intended for informational and 
+           educational purposes only.
+	    </span>
+	   </p>
+	   <p></p>
+	</div>
+</body>
+
+</html>
